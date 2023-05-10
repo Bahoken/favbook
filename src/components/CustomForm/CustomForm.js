@@ -6,8 +6,8 @@ import CustomButton from '../ui/CustomButton/CustomButton'
 
 const CustomForm = ({ SubmitAction,TextHeader,CustomClass,InputTexts,InputButton }) => {
   return (
-    <form onSubmit={SubmitAction} className={`flex flex-col gap-2 ${CustomClass}`}>
-        <Card CustomClass="flex flex-col justify-center align-center gap-6">
+    <form onSubmit={SubmitAction} className={`flex flex-col gap-2`}>
+        <Card CustomClass={CustomClass}>
             { TextHeader && <TextBlock title={TextHeader.title} contain={TextHeader.contain} />}
             { InputTexts && InputTexts.map((InputText) => {
                 return <CustomInput handleChange={InputText.handleChange} type={InputText.type} key={InputText.key} placeholder={InputText.placeholder} />

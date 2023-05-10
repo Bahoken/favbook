@@ -75,7 +75,7 @@ const Signup = () => {
           TextHeader={TextHeader}
           InputTexts={InputTexts}
           InputButton={InputButton}
-            SubmitAction={handleSubmit}
+          SubmitAction={handleSubmit}
         />
       </div>
     </div>
